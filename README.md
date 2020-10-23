@@ -10,6 +10,10 @@ python -m pip install --upgrade pip
 若是Python3.x，
 python3 -m pip install --upgrade pip  
 
+#首先安装Cloud Foundry
+ibmcloud cf install
+ibmcloud target --cf
+
 # 一键搭建脚本
 wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/gouidea/IBM-v2ray-auto/master/install.sh && chmod +x install.sh  && ./install.sh
 
